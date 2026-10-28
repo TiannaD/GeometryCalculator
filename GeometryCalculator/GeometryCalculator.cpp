@@ -9,6 +9,7 @@ int main() {
 	int userChoice = 0 ;
 
 	cout << endl << "Calculate area." << endl << "Enter shape(1 - 4): " << endl << "1 - Circle" << endl << "2 - Rectangle" << endl << "3 - Triangle" << endl << "4 - Quit" << endl;
+	
 	cin >> userChoice;
 
 	//Invalid choice
