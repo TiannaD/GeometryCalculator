@@ -7,9 +7,9 @@ using namespace std;
 int main() {
 
 	//User inputs
-	int userChoice = 0;
-	int dimensionChoice1 = 0;
-	int dimensionChoice2 = 0;
+	int userChoice;
+	int dimensionChoice1;
+	int dimensionChoice2;
 
 	//Circle vars
 	double const PI = 3.14;
@@ -36,25 +36,49 @@ int main() {
 			cout << endl << "Area of a circle." << endl << "Enter radius: " << endl << endl;
 			cin >> dimensionChoice1;
 			radius = dimensionChoice1;
-			circleArea = PI * (radius * radius);
-			cout << endl << "Area: " << circleArea << endl;
-			break;
+
+			if (radius < 0) {
+				cout << endl << "Invalid dimension." << endl;
+				break;
+			}
+			else {
+				circleArea = PI * (radius * radius);
+				cout << endl << "Area: " << circleArea << endl;
+				break;
+			}
+
 		case 2:
 			cout << endl << "Area of a rectangle." << endl << "Enter length and width: " << endl << endl;
 			cin >> dimensionChoice1 >> dimensionChoice2;
 			length = dimensionChoice1;
 			width = dimensionChoice2;
-			rectangleArea = length * width;
-			cout << endl << "Area: " << rectangleArea << endl;
-			break;
+
+			if (length < 0 || width < 0) {
+				cout << endl << "Invalid dimension(s)." << endl;
+				break;
+			}
+			else {
+				rectangleArea = length * width;
+				cout << endl << "Area: " << rectangleArea << endl;
+				break;
+			}
+
 		case 3:
 			cout << endl << "Area of a triangle." << endl << "Enter base and height: " << endl << endl;
 			cin >> dimensionChoice1 >> dimensionChoice2;
 			base = dimensionChoice1;
 			height = dimensionChoice2;
-			triangleArea = (base * height) / 2;
-			cout << endl << "Area: " << triangleArea << endl;
-			break;
+
+			if (base < 0 || height < 0) {
+				cout << endl << "Invalid dimension(s)." << endl;
+				break;
+			}
+			else {
+				triangleArea = (base * height) / 2;
+				cout << endl << "Area: " << triangleArea << endl;
+				break;
+			}
+
 		case 4:
 			cout << endl << "Quitting program" << endl;
 			break;
