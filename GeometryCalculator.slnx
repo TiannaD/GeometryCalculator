@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GeometryCalculator/GeometryCalculator.vcxproj" Id="937ab60f-1db4-4d98-8868-e7909b4ceb4e" />
+</Solution>
