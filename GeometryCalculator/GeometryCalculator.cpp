@@ -12,7 +12,7 @@ int main() {
 	int dimensionChoice2 = 0;
 
 	//Circle vars
-	double PI = 0;
+	double const PI = 3.14;
 	double radius = 0;
 	//Rectangle vars
 	double length = 0;
@@ -22,24 +22,36 @@ int main() {
 	double height = 0;
 
 	//Area formulas
-	double circleArea = PI * (radius * radius);
+	double circleArea = 0;
 	double rectangleArea = length * width;
-	double triangleArea = (base * height) / 2 ;
+	double triangleArea = (base * height) / 2;
+
+	//Output
+	double finalArea;
 
 
-	cout << endl << "Calculate area." << endl << "Enter shape(1 - 4): " << endl << "1 - Circle" << endl << "2 - Rectangle" << endl << "3 - Triangle" << endl << "4 - Quit" << endl;
+	cout << endl << "Calculate area." << endl << "Enter shape(1 - 4): " << endl << "1 - Circle" << endl << "2 - Rectangle" << endl << "3 - Triangle" << endl << "4 - Quit" << endl << endl;
 	
 	cin >> userChoice;
 
 	switch (userChoice) {
 		case 1:
-			cout << endl << "Area of a circle. Enter dimensions: " << endl;
+			cout << endl << "Area of a circle. Enter radius: " << endl << endl;
+			cin >> dimensionChoice1;
+			radius = dimensionChoice1;
+			circleArea = PI * (radius * radius);
+			finalArea = circleArea;
+			cout << endl << circleArea;
 			break;
 		case 2:
-			cout << endl << "Area of a rectangle. Enter dimensions: " << endl;
+			radius = dimensionChoice1;
+			circleArea = PI * (radius * radius);
+			finalArea = circleArea;
+			cout << endl << circleArea;
+			cout << endl << "Area of a rectangle. Enter dimensions: " << endl << endl;
 			break;
 		case 3:
-			cout << endl << "Area of a triangle. Enter dimensions: " << endl;
+			cout << endl << "Area of a triangle. Enter dimensions: " << endl << endl;
 			break;
 		case 4:
 			cout << endl << "Quitting" << endl;
