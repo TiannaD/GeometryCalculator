@@ -37,7 +37,7 @@ int main() {
 			cin >> dimensionChoice1;
 			radius = dimensionChoice1;
 			circleArea = PI * (radius * radius);
-			cout << endl << circleArea << endl;
+			cout << endl << "Area: " << circleArea << endl;
 			break;
 		case 2:
 			cout << endl << "Area of a rectangle." << endl << "Enter length and width: " << endl << endl;
@@ -45,7 +45,7 @@ int main() {
 			length = dimensionChoice1;
 			width = dimensionChoice2;
 			rectangleArea = length * width;
-			cout << endl << rectangleArea << endl;
+			cout << endl << "Area: " << rectangleArea << endl;
 			break;
 		case 3:
 			cout << endl << "Area of a triangle." << endl << "Enter base and height: " << endl << endl;
@@ -53,7 +53,7 @@ int main() {
 			base = dimensionChoice1;
 			height = dimensionChoice2;
 			triangleArea = (base * height) / 2;
-			cout << endl << triangleArea << endl;
+			cout << endl << "Area: " << triangleArea << endl;
 			break;
 		case 4:
 			cout << endl << "Quitting program" << endl;
