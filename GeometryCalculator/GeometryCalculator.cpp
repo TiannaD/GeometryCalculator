@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//This program...
+//This program will ask user for a shape to calculate it's area
 
 int main() {
 
