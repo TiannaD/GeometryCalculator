@@ -80,10 +80,10 @@ int main() {
 			}
 
 		case 4:
-			cout << endl << "Quitting program" << endl;
+			cout << endl << "Quitting program." << endl;
 			break;
 		default:
-			cout << endl << "Invalid shape entry. Quitting program..." << endl;
+			cout << endl << "Invalid menu selection. Quitting program..." << endl;
 	}
 
 	return 0;
