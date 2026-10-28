@@ -23,11 +23,8 @@ int main() {
 
 	//Area formulas
 	double circleArea = 0;
-	double rectangleArea = length * width;
+	double rectangleArea = 0;
 	double triangleArea = (base * height) / 2;
-
-	//Output
-	double finalArea;
 
 
 	cout << endl << "Calculate area." << endl << "Enter shape(1 - 4): " << endl << "1 - Circle" << endl << "2 - Rectangle" << endl << "3 - Triangle" << endl << "4 - Quit" << endl << endl;
@@ -40,15 +37,17 @@ int main() {
 			cin >> dimensionChoice1;
 			radius = dimensionChoice1;
 			circleArea = PI * (radius * radius);
-			finalArea = circleArea;
 			cout << endl << circleArea;
 			break;
 		case 2:
-			radius = dimensionChoice1;
-			circleArea = PI * (radius * radius);
-			finalArea = circleArea;
-			cout << endl << circleArea;
-			cout << endl << "Area of a rectangle. Enter dimensions: " << endl << endl;
+			cout << endl << "Area of a rectangle. Enter length: " << endl << endl;
+			cin >> dimensionChoice1;
+			length = dimensionChoice1;
+			cout << endl << "Enter height: " << endl << endl;
+			cin >> dimensionChoice2;
+			width = dimensionChoice2;
+			rectangleArea = length * width;
+			cout << endl << rectangleArea;
 			break;
 		case 3:
 			cout << endl << "Area of a triangle. Enter dimensions: " << endl << endl;
